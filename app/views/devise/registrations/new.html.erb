@@ -8,24 +8,6 @@
   </div>
 
   <div class="field">
-    <%= f.input :first_name, placeholder: "John" %>
-  </div>
-
-  <div class="field">
-    <%= f.input :last_name, placeholder: "Smith" %>
-  </div>
-
-  <div class="field">
-    <%= f.input :birthday, as: :date, start_year: Date.today.year - 90,
-                                end_year: Date.today.year - 12,
-                                order: [:month, :day, :year] %>
-  </div>
-
-  <div class="field">
-    <%= f.input :zip_code, placeholder: "07650" %>
-  </div>
-
-  <div class="field">
     <%= f.input :password, autocomplete: "off" %>
     <% if @validatable %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
